@@ -1,2 +1,4 @@
 # CSC131
-Repo for CSC 131 - Group 9
+Repo for CSC 131 - Group 2
+
+philip smells
