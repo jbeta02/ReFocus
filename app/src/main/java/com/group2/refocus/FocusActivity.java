@@ -3,26 +3,24 @@ package com.group2.refocus;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Break extends AppCompatActivity {
+public class FocusActivity extends AppCompatActivity {
 
-    LinearLayout slotHolder;
+    LinearLayout slotHolderFocus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_break);
+        setContentView(R.layout.activity_focus);
 
         // add slots
-        slotHolder = findViewById(R.id.slotHolder);
+        slotHolderFocus = findViewById(R.id.slotHolderFocus);
 
         Button time0 = new Button(this);
         Button time1 = new Button(this);
@@ -36,9 +34,9 @@ public class Break extends AppCompatActivity {
         buttonListener(time1);
         buttonListener(time2);
 
-        slotHolder.addView(time0);
-        slotHolder.addView(time1);
-        slotHolder.addView(time2);
+        slotHolderFocus.addView(time0);
+        slotHolderFocus.addView(time1);
+        slotHolderFocus.addView(time2);
     }
 
     private void buttonListener(Button button){
@@ -47,7 +45,7 @@ public class Break extends AppCompatActivity {
             public void onClick(View view) {
 
                 // hide slots
-                slotHolder.removeAllViews();
+                slotHolderFocus.removeAllViews();
 
                 TextView timer = findViewById(R.id.timerView);
 
@@ -77,7 +75,7 @@ public class Break extends AppCompatActivity {
                     @Override
                     public void onFinish() {
                         // When the task is over it will print 00:00:00
-                        slotHolder.removeAllViews();
+                        slotHolderFocus.removeAllViews();
                         launchMain(view);
                     }
                 }.start();
@@ -86,7 +84,7 @@ public class Break extends AppCompatActivity {
     }
 
     public void launchMain(View view) {
-        Intent intent = new Intent(this, Focus.class);
+        Intent intent = new Intent(this, FocusActivity.class);
 
         startActivity(intent);
     }

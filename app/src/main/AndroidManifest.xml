@@ -33,7 +33,7 @@
         </activity>
 
         <activity
-            android:name=".Break"
+            android:name=".BreakActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,7 +43,7 @@
         </activity>
 
         <activity
-            android:name=".Focus"
+            android:name=".FocusActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

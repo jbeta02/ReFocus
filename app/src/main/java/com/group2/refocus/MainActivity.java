@@ -4,11 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,13 +15,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void launchFocus(View view) {
-        Intent intent = new Intent(this, Focus.class);
+        Intent intent = new Intent(this, FocusActivity.class);
 
         this.startActivity(intent);
     }
 
     public void launchBreak(View view) {
-        Intent intent = new Intent(this, Break.class);
+        Intent intent = new Intent(this, BreakActivity.class);
 
         this.startActivity(intent);
     }
