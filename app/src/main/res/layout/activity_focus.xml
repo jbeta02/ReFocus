@@ -8,8 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-
-        android:id="@+id/appTitleHome"
+        android:id="@+id/appTitleBreak"
         android:layout_width="200dp"
         android:layout_height="61dp"
         android:text="ReFocus"
@@ -23,7 +22,7 @@
         app:layout_constraintVertical_bias="0.261" />
 
     <Button
-        android:id="@+id/focusButton"
+        android:id="@+id/focusTitle"
         android:layout_width="211dp"
         android:layout_height="94dp"
         android:text="Focus"
@@ -32,33 +31,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466"
-        android:onClick="launchFocus"/>
+        app:layout_constraintVertical_bias="0.466" />
 
-    <Button
-        android:id="@+id/breakButton"
-        android:layout_width="211dp"
+    <LinearLayout
+        android:id="@+id/slotHolderFocus"
+        android:layout_width="300dp"
         android:layout_height="94dp"
-        android:text="Break"
-        android:textSize="35dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701"
-        android:onClick="launchBreak"/>
+        app:layout_constraintVertical_bias="0.714" />
 
-    <Button
-        android:id="@+id/settingsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Settings"
+    <TextView
+        android:id="@+id/timerView"
+        android:layout_width="287dp"
+        android:layout_height="109dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="70dp"
+        android:visibility="invisible"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        android:onClick="launchSettings"/>
+        app:layout_constraintVertical_bias="0.783" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
