@@ -1,4 +1,4 @@
-# CSC131
+# Android app designed to help students set a study and break timer. App gives students break suggests.
 
 ## Home
 <img src="https://github.com/user-attachments/assets/785303a0-7638-4ab9-b8cf-aab8276a2525" alt="Alt Text" width="500" height="900">
