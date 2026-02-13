@@ -1,5 +1,9 @@
 # Android app designed to help students set a study and break timer. App gives students break suggests.
 
+## App Screens
+<img width="1094" height="655" alt="Screenshot 2026-02-12 195318" src="https://github.com/user-attachments/assets/9e54a33a-ec25-4a4e-9999-902d5ac358af" />
+
+
 ## Home
 <img src="https://github.com/user-attachments/assets/785303a0-7638-4ab9-b8cf-aab8276a2525" alt="Alt Text" width="500" height="900">
 
